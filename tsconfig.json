@@ -6,5 +6,12 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/rk-ui/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/rk-ui/tsconfig.spec.json"
+    }
+]
 }
