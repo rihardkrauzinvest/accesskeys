@@ -1,3 +1,3 @@
 {
-  "signInAction": "this.clearErrors();\n    if (!this.authService) {\n      return;\n    }\n    this.isLoading = true;\n    this.subs.add(this.authService.signIn({login: value.login, pwd: value.password}).pipe(\n      finalize(() => {\n        this.isLoading = false;\n        this.cdr.markForCheck();\n      })\n    ).subscribe((result) => {\n      if (result) {\n        this.fulfillAction();\n      }\n    }, (err) => this.setErrorMessage(AuthRegistrationFormTab.SIGN_IN, err)));"
+  "signInAction": "this.clearErrors();\n    this.isLoading = true;\n    this.subs.add(this.authService.signIn({login: value.login, pwd: value.password}).pipe(\n      finalize(() => {\n        this.isLoading = false;\n        this.cdr.markForCheck();\n      })\n    ).subscribe((result) => {\n      if (result) {\n        this.fulfillAction();\n      }\n    }, (err) => this.setErrorMessage(AuthRegistrationFormTab.SIGN_IN, err)));"
 }
