@@ -1,5 +1,9 @@
 {
-  "name": "rk-ui",
+  "name": "@rihardkrauz/rk-ui",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RihardKrauz/rihardkrauz.github.io.git"
+  },
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.0.2",
