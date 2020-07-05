@@ -1,0 +1,4 @@
+{
+  "service": "dmService",
+  "provider": "getProviderQuery"
+}
